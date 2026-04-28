@@ -100,10 +100,10 @@ function getEmotionStroke() {
 // PRELOAD
 // -------------------------------
 function preload() {
-  fonts.Armor = loadFont('fonts/Armor/armor.ttf')
+  fonts.Armor = loadFont('fonts/Armor/Armor.ttf')
   fonts.Drift = loadFont('fonts/Drift/drift.ttf')
   fonts.Drive = loadFont('fonts/Drive/drive.ttf')
-  fonts.Pulse = loadFont('fonts/Pulse/pulse.ttf')
+  fonts.Pulse = loadFont('fonts/Pulse/Pulse.ttf')
 }
 
 
