@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generative Expressive Type — Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <aside id="panel">
+        <h2>Expressive Type — Quiz</h2>
+
+        <form id="quizForm">
+          <div class="question">
+            <label>1) Emotions (select up to six)</label>
+            <div class="emotions">
+              <label><input type="checkbox" id="emotion-Joy"> Joy</label>
+              <label><input type="checkbox" id="emotion-Passion"> Passion</label>
+              <label><input type="checkbox" id="emotion-Love"> Love</label>
+              <label><input type="checkbox" id="emotion-Hopefulness"> Hopefulness</label>
+              <label><input type="checkbox" id="emotion-Peaceful"> Peaceful</label>
+              <label><input type="checkbox" id="emotion-Boredom"> Boredom</label>
+              <label><input type="checkbox" id="emotion-Rigid"> Rigid</label>
+              <label><input type="checkbox" id="emotion-Frustration"> Frustration</label>
+              <label><input type="checkbox" id="emotion-Overwhelmed"> Overwhelmed</label>
+              <label><input type="checkbox" id="emotion-Disappointed"> Disappointed</label>
+              <label><input type="checkbox" id="emotion-Doubt"> Doubt</label>
+              <label><input type="checkbox" id="emotion-Worry"> Worry</label>
+              <label><input type="checkbox" id="emotion-Stress"> Stress</label>
+              <label><input type="checkbox" id="emotion-Anxiety"> Anxiety</label>
+              <label><input type="checkbox" id="emotion-Anger"> Anger</label>
+              <label><input type="checkbox" id="emotion-Hatred"> Hatred</label>
+              <label><input type="checkbox" id="emotion-Jealousy"> Jealousy</label>
+              <label><input type="checkbox" id="emotion-Insecurity"> Insecurity</label>
+              <label><input type="checkbox" id="emotion-Fear"> Fear</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <label>2) Social Battery</label>
+            <select id="battery">
+              <option>Empty</option>
+              <option>Low</option>
+              <option>Mid</option>
+              <option>Full</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label>3) Productivity Today</label>
+            <select id="productivity">
+              <option>Bare minimum</option>
+              <option>Moderate</option>
+              <option>Solid productivity</option>
+              <option>Super productive</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label>4) Biggest Distraction</label>
+            <select id="distraction">
+              <option>Social media / phone</option>
+              <option>Procrastination</option>
+              <option>Unexpected tasks</option>
+              <option>Lack of focus</option>
+              <option>Socializing</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label>5) Energy Level</label>
+            <select id="energy">
+              <option>High all day</option>
+              <option>Good with a dip</option>
+              <option>Low</option>
+              <option>Exhausted</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label>6) Physical Health Today</label>
+            <select id="health">
+              <option>Exercised and ate healthy</option>
+              <option>Did one of the two above</option>
+              <option>Planned recovery day</option>
+              <option>Failed to excercise or eat healthy</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label>7) Organization Level</label>
+            <select id="organization">
+              <option>Extremely organized</option>
+              <option>Prepared with some tidying to do</option>
+              <option>Mildly messy</option>
+              <option>Chaos</option>
+            </select>
+          </div>
+
+          <div class="question word-input">
+            <label>One Word (max 10)</label>
+            <input id="word" maxlength="10" placeholder="" value="" />
+          </div>
+
+          <div class="buttons">
+            <button id="generate" type="button">Generate</button>
+            <button id="download" type="button">Download PNG</button>
+          </div>
+
+          <label class="switch"><input id="animateToggle" type="checkbox"/> Animate</label>
+        </form>
+
+        <div id="log" style="margin-top:10px; font-size:12px; color:#fff; max-height:200px; overflow:auto;"></div>
+      </aside>
+
+      <main id="canvasArea">
+        <div id="canvas-wrap"></div>
+      </main>
+    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js"></script>
+<script src="sketch.js"></script>
+<script type="module" src="quiz.js"></script>
+
+
+
+  </body>
+</html>
