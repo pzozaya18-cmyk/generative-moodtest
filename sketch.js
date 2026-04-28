@@ -78,6 +78,7 @@ const EMOTION_COLORS = {
   Rigid: '#002fff',
   Frustration: '#ff416a',
   Overwhelmed: '#5021be',
+  Disappointed: '#6d6d6d',
   Doubt: '#9cfd41',
   Worry: '#5d31fe',
   Stress: '#ffa600',
