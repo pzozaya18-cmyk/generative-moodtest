@@ -16,7 +16,7 @@ window.params = {
 
 const emotionList = [
   'Joy','Passion','Love','Hopefulness','Peaceful',
-  'Boredom','Rigid','Frustration','Overwhelmed','Disappointed','Doubt',
+  'Boredom','Rigid','Frustration','Overwhelmed','Doubt',
   'Worry', 'Stress','Anxiety','Discouragement','Anger','Hatred','Jealousy','Insecurity','Fear'
 ]
 
